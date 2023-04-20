@@ -20,6 +20,7 @@ public class ConversorMoedas extends UnicastRemoteObject implements IConversorMo
                         valorMoedaSecundaria = 0.18;
                         break;
                 }
+                break;
             case "Dólar":
                 switch(moedaSecundaria) {
                     case "Real":
@@ -29,6 +30,7 @@ public class ConversorMoedas extends UnicastRemoteObject implements IConversorMo
                         valorMoedaSecundaria = 0.91;
                         break;
                 }
+                break;
             case "Euro":
                 switch(moedaSecundaria) {
                     case "Real":
@@ -38,6 +40,7 @@ public class ConversorMoedas extends UnicastRemoteObject implements IConversorMo
                         valorMoedaSecundaria = 1.10;
                         break;
                 }
+                break;
         }
                 
         return valorMoedaSecundaria * valorMoedaReferencia;
